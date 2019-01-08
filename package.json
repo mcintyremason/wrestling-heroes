@@ -1,0 +1,37 @@
+{
+  "name": "judo-heroes",
+  "version": "1.0.0",
+  "description": "react demo - judo heroes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node_modules/.bin/webpack -p",
+    "start-server": "NODE_ENV=production node_modules/.bin/webpack -p && node_modules/.bin/babel-node --presets react,es2015 src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmammino/judo-heroes.git"
+  },
+  "author": "Mason McIntyre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmammino/judo-heroes/issues"
+  },
+  "homepage": "https://github.com/lmammino/judo-heroes#readme",
+  "dependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "ejs": "^2.5.9",
+    "express": "^4.16.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.3"
+  }
+}
